@@ -6,8 +6,8 @@ import io from 'socket.io-client';
 const socket = io('http://localhost:3001');
 
 const Game = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
   const { roomCode, username, players } = location.state || {};
 
   const [currentSinger, setCurrentSinger] = useState('');
